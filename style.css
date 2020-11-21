@@ -4,11 +4,17 @@
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
+body {
+  display: relative;
+  max-height: 812px;
+}
 
 #container {
   max-width: 375px;
   max-height: 812px;
   margin: auto;
+  position: relative;
+  bottom: 812px;
 }
 
 .v10_40 {
@@ -1139,4 +1145,124 @@ input[type=range]::-webkit-slider-thumb {
 .date-right {
   top: -30px;
   left: 100px;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+/* The sidebar menu */
+
+.sidebar {
+  min-height: 100%;
+  width: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  max-width: 375px;
+  max-height: 812px;
+  margin: auto;
+  position: relative;
+  z-index: 999;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.closebtn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  text-decoration: none;
+  background: none !important;
+  border: none !important;
+  z-index: 1;
+}
+
+.openbtn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 8px 8px 8px 32px;
+  background: none !important;
+  border: none !important;
+  z-index: 1;
+}
+
+#navbar {
+  transition: margin-left .5s;
+  /* If you want a transition effect */
+  padding: 8px;
+  width: 100%;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */
+}
+
+.menu-icons {
+  margin-right: 10px;
+}
+
+.panel-icons {
+  margin-left: 10px;
+}
+
+/*Style for Log out*/
+
+.logout-item {
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 5px;
+  text-align: center;
+  background-color: #E7E9F3;
+  color: orange;
+  margin: 50px 15px;
+}
+
+.logout-item a {
+  text-decoration: none;
+}
+
+#pos-log {
+  margin-top: 500px;
 }
