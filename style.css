@@ -5,9 +5,11 @@
 }
 
 body {
-  display: relative;
   max-width: 375px;
   margin: auto;
+}
+
+#karta-body {
   overflow: hidden;
 }
 
