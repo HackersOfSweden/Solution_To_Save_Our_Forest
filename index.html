@@ -16,14 +16,21 @@
         rel="stylesheet">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
-
     <meta name="apple-mobile-web-app-title" content="Add to Home">
-
     <link rel="shortcut icon" sizes="16x16" href="/imgs/icon-16x16.png">
     <link rel="shortcut icon" sizes="196x196" href="/imgs/icon-196x196.png">
     <link rel="apple-touch-icon-precomposed" href="/imgs/icon-152x152.png">
     <link rel="stylesheet" type="text/css" href="addtohomescreen.css">
     <script src="addtohomescreen.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K07XEBE00V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-K07XEBE00V');
+    </script>
 </head>
 
 <body>
@@ -48,48 +55,31 @@
                 <script>
                     addToHomescreen();
                 </script>
-                <div id="mySidebar" class="sidebar closed">
-                    <a href="javascript:void(0)" class="closebtn" onclick="navEvent()">&#9776;</a>
-                    <a href="javascript:void(0)" class="accordion">Mina Skogar</a>
-                    <div class="panel">
-                        <a href="javascript:void(0)">Berit 1.1</a>
-                        <a href="javascript:void(0)">Bertil 1.2</a>
-                        <a href="javascript:void(0)">Linus 2.1</a>
-                    </div>
-                    <a href="logout.html">Kontakta oss</a>
-                    <a href="logout.html">Logga ut</a>
+                <div class="v10_112"></div>
+                <div class="v10_188">
+                    <div class="v10_113"></div>
                 </div>
-                <div class="container">
-                    <div id="navbar">
-                        <button class="openbtn" onclick="navEvent()">&#9776;</button>
-                    </div>
-
-                    <div class="v10_112"></div>
-                    <div class="v10_188">
-                        <div class="v10_113"></div>
-                    </div>
-                    <div class="v10_41">
-                        <div class="v10_88">
-                            <div class="v10_89">
-                                <div class="v10_90"></div>
-                                <div class="v10_91"></div>
-                                <div class="v10_92"></div>
-                            </div>
+                <div class="v10_41">
+                    <div class="v10_88">
+                        <div class="v10_89">
+                            <div class="v10_90"></div>
+                            <div class="v10_91"></div>
+                            <div class="v10_92"></div>
                         </div>
                     </div>
-                    <div class="v10_48">
-                        <div class="v10_85">
-                            <div class="v10_86" onclick="login()"><span class="v10_87">Logga In</span></div>
-                        </div>
+                </div>
+                <div class="v10_48">
+                    <div class="v10_85">
+                        <div class="v10_86" onclick="login()"><span class="v10_87">Logga In</span></div>
                     </div>
-                    <div class="v10_127">
-                        <div class="v10_128"><input type="text" class="input-element" placeholder="Personnummer"
-                                value=""
-                                onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
-                        </div>
+                </div>
+                <div class="v10_127">
+                    <div class="v10_128"><input type="text" class="input-element" placeholder="Personnummer" value=""
+                            onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))">
                     </div>
                 </div>
         </div>
+    </div>
 </body>
 
 </html>
