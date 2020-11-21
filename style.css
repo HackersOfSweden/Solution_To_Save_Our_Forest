@@ -1,15 +1,24 @@
 * {
-  /* overflow-x: hidden; */
   padding: 0px;
   margin: 0px;
   font-family: 'Roboto', sans-serif;
 }
+
 body {
   display: relative;
   max-height: 812px;
+  max-width: 375px;
+  margin: auto;
+  overflow: hidden;
 }
 
 #container {
+  max-width: 375px;
+  max-height: 812px;
+  margin: auto;
+}
+
+#karta-container {
   max-width: 375px;
   max-height: 812px;
   margin: auto;
@@ -527,7 +536,7 @@ body {
 }
 
 .v10_154 {
-  width: 65px;
+  width: 70px;
   color: rgba(255, 255, 255, 1);
   position: absolute;
   top: 15px;
