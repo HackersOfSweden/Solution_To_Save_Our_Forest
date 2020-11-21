@@ -6,7 +6,6 @@
 
 body {
   display: relative;
-  max-height: 812px;
   max-width: 375px;
   margin: auto;
   overflow: hidden;
