@@ -10,7 +10,7 @@ body {
 }
 
 #karta-body {
-  overflow: hidden;
+  max-height: 812px;
 }
 
 #container {
