@@ -32,7 +32,7 @@ fetch(proxyUrl + tokenUrl, {
       .then((res) => {
         return res.json();
       })
-      .then((data) => document.getElementById('test').innerHTML = data.datum)
+      .then((data) => document.getElementById('test').innerHTML = data[0].datum)
       .catch((error) => console.log(error))
   )
   .catch((error) => console.log(error));
