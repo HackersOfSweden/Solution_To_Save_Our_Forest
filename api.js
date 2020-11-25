@@ -9,4 +9,4 @@ let resp = fetch(url, {
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
     }
-}).then(response => console.log('Bearer Token: ' + response.json()));
+}).then(response => console.log('Bearer Token: ' + console.log(JSON.stringify(response))));
