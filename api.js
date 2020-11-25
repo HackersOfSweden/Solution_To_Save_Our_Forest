@@ -5,7 +5,6 @@ let scope = 'sks_api';
 
 let resp = fetch(url, {
     method: 'POST',
-    mode:'no-cors',
     body: 'grant_type=client_credentials&client_id=' + client_id + '&client_secret=' + client_secret + '&scope=' + scope,
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
