@@ -8,6 +8,7 @@ let resp = fetch(url, {
     mode: 'no-cors',
     body: 'grant_type=client_credentials&client_id=' + client_id + '&client_secret=' + client_secret + '&scope=' + scope,
     headers: {
-        'Content-Type': 'application/x-www-form-urlencoded'
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*'
     }
 }).then(response => console.log('Bearer Token: ' + console.log(JSON.stringify(response))));
