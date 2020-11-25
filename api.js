@@ -11,4 +11,4 @@ let resp = fetch(url, {
         'Content-Type': 'application/x-www-form-urlencoded',
         'Access-Control-Allow-Origin': '*'
     }
-}).then(response => console.log('Bearer Token: ' + console.log(JSON.stringify(response))));
+}).then(response => console.log('Bearer Token: ' + console.log(response)));
