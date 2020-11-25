@@ -36,10 +36,16 @@ fetch(proxyUrl + tokenUrl, {
       .then((data) => {
         const ul = document.getElementById("test");
         for (let i = 0; i < data.length; i++) {
+          var el = data[i].datum;
           const createLi = document.createElement("li");
-          createLi.textContent = data[i].datum;
+          createLi.textContent = el;
           ul.appendChild(createLi);
         }
+        const maxValue = document.getElementById("maxValue");
+        const minValue = document.getElementById("minValue");
+        maxValue.textContent = "Min date:" + data[0].datum;
+        minValue.textContent = "Max date:" + data[data.length - 1];
+
         console.log(data);
       })
       .catch((error) => console.log(error))
