@@ -38,13 +38,13 @@ fetch(proxyUrl + tokenUrl, {
         for (let i = 0; i < data.length; i++) {
           var el = data[i].datum;
           const createLi = document.createElement("li");
-          createLi.textContent = el;
+          createLi.textContent = el.slice(0,10);
           ul.appendChild(createLi);
         }
         const maxValue = document.getElementById("maxValue");
         const minValue = document.getElementById("minValue");
-        maxValue.textContent = "Min date: " + data[0].datum;
-        minValue.textContent = "Max date: " + data[data.length - 1].datum;
+        maxValue.textContent = "Min date: " + data[0].datum.slice(0,10);
+        minValue.textContent = "Max date: " + data[data.length - 1].datum.slice(0,10);
 
         console.log(data);
       })
