@@ -43,8 +43,8 @@ fetch(proxyUrl + tokenUrl, {
         }
         const maxValue = document.getElementById("maxValue");
         const minValue = document.getElementById("minValue");
-        maxValue.textContent = "Min date:" + data[0].datum;
-        minValue.textContent = "Max date:" + data[data.length - 1];
+        maxValue.textContent = "Min date: " + data[0].datum;
+        minValue.textContent = "Max date: " + data[data.length - 1].datum;
 
         console.log(data);
       })
